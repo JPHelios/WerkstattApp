@@ -2,8 +2,24 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
+				<Page id="page" title="{i18n>title}" titleAlignment="Center">
+					<content>
+						<Image src="images/Ford_Logo.jpg" width="100%"/>
+						<Bar id="bar0" design="Header">
+							<contentMiddle>
+								<Button id="button1" press="onButton1Press" text="Button1" type="Accept" width="100px"/>
+								<Button id="button2" press="onButton1Press" text="Button2" type="Accept" width="100px"/>
+							</contentMiddle>
+						</Bar>
+			
+					</content>
+					<footer>
+						<Toolbar>
+							<ToolbarSpacer/>
+								<Link emphasized="true" target="_blank" href="https://www.imdb.com/" text="{i18n>footerLink}"/>
+							<ToolbarSpacer/>
+						</Toolbar>
+					</footer>
 				</Page>
 			</pages>
 		</App>
